@@ -69,7 +69,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="overflow-hidden">
                 <img
-                  src="public\Slide 16_9 - 1.png"
+                  src="https://i.ibb.co/0jnH9Xzt/Slide-16-9-1.png"
                   alt="EggHunt"
                   className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
                 />
