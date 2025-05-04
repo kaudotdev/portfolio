@@ -18,7 +18,7 @@ export default function ProjectsPage() {
             <div className="relative">
               <div className="overflow-hidden">
                 <img
-                  src="src\assets\images\Slide 16_9 - 1.png"
+                  src="public\Slide 16_9 - 1.png"
                   alt="EggHunt"
                   className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
                 />
