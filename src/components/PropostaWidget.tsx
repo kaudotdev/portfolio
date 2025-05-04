@@ -223,7 +223,7 @@ Esta proposta é válida por 15 dias a partir da data de emissão.
       ) : (
         <div className="space-y-4">
           <p className="text-gray-300 mb-6">
-            Para efetivar esta proposta, copie o texto abaixo e envie para mim via <span className="font-medium text-orange-500">Discord</span> (kau.dev) ou <span className="font-medium text-orange-500">Email</span> (contato@kau.dev).
+            Para efetivar esta proposta, copie o texto abaixo e envie para mim via <span className="font-medium text-orange-500">Discord</span> (k.dev) ou <span className="font-medium text-orange-500">Email</span> (kaudotdev@proton.me).
           </p>
           
           <div className="p-4 bg-brown-952 border border-orange-900 rounded-lg">

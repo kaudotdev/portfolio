@@ -22,7 +22,7 @@ export default function HomePage() {
 
         {/* Social Links */}
         <div className="flex flex-wrap gap-3 mt-5 font-medium">
-          <a href="#" className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-sm text-sm group relative overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out">
+          <a href="https://github.com/kaudotdev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-sm text-sm group relative overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out">
             <FaGithub className="w-4 h-4 text-black" />
             <span className="text-black">GitHub</span>
             <div className="relative w-3 h-3 overflow-hidden flex items-center justify-center">
@@ -38,7 +38,7 @@ export default function HomePage() {
               <HiAtSymbol className="w-3.5 h-3.5 text-black absolute transition-all duration-700 ease-in-out transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100" />
             </div>
           </a>
-          <a href="#" className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-sm text-sm group relative overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out">
+          <a href="mailto:kaudotdev@proton.me" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-sm text-sm group relative overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out">
             <MdEmail className="w-4 h-4 text-black"/>
             <span className="text-black">Email</span>
             <div className="relative w-3 h-3 overflow-hidden flex items-center justify-center">
@@ -54,7 +54,7 @@ export default function HomePage() {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-6 sm:mb-10 md:mb-14">
           <h2 className="text-2xl sm:text-3xl font-inter font-bold">Últimos projetos</h2>
           <a href="#" className="text-sm sm:text-md flex gap-2 sm:gap-3 place-items-center font-inter text-gray-300 py-2 px-3 sm:px-4 bg-orange-902 border-1 border-orange-950 rounded-md hover:bg-orange-900 transition-all duration-300 ease-out delay-150 relative overflow-hidden group">
-            <span>Ver todos</span>
+            <a href="/projects">Ver todos</a>
             <div className="relative w-5 flex items-center justify-center h-5 overflow-hidden">
               <FaAngleRight className="text-gray-300 w-4 sm:w-5 h-4 sm:h-5 absolute transition-all duration-700 ease-in-out transform group-hover:-translate-x-10 group-hover:opacity-0" />
               <RxOpenInNewWindow className="text-gray-300 stroke-1 w-3 sm:w-4 h-3 sm:h-4 absolute transition-all duration-700 ease-in-out transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100" />
