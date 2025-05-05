@@ -46,12 +46,12 @@ const AboutMePage: FC = () => {
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
       <section className="pt-16 sm:pt-20 md:pt-24 py-8 sm:py-10 md:py-12">
         <div>
-        <h1 className="text-5xl/12 sm:text-6xl/14 md:text-7xl/15 lg:text-8xl/20 font-bold font-fira">
-          Sobre <span className="text-orange-500">Mim</span>
-        </h1>
-        <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-normal text-gray-400 mt-2">
-          Desenvolvedor apaixonado por tecnologia
-        </p>
+          <h1 className="text-5xl/12 sm:text-6xl/14 md:text-7xl/15 lg:text-8xl/20 font-bold font-fira">
+            Sobre <span className="text-orange-500">Mim</span>
+          </h1>
+          <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-normal text-gray-400 mt-2">
+            Desenvolvedor apaixonado por tecnologia
+          </p>
         </div>
 
         <div className="mt-8 sm:mt-10 md:mt-12 bg-brown-950 border border-orange-900 rounded-xl p-4 sm:p-6 md:p-8">

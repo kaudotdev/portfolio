@@ -221,7 +221,7 @@ const CalculadoraPage: FC = () => {
           <div className="bg-brown-950 border border-orange-900 rounded-xl p-3 sm:p-4 md:p-6 lg:p-8">
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-xl sm:text-2xl">🧮</span>
-              <h2 className="text-lg/5 sm:text-xl md:text-2xl font-bold font-inter">Calcule o Valor Preciso do Seu Projeto</h2>
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold font-inter leading-tight">Calcule o Valor Preciso do Seu Projeto</h2>
             </div>
             
             <p className="text-gray-300 mb-4 sm:mb-6 text-xs sm:text-sm">
@@ -262,7 +262,7 @@ const CalculadoraPage: FC = () => {
               step={1}
               onChange={setPrazo}
               formatValue={(value) => `${value} dias ${value < 15 ? '(Urgente)' : value < 30 ? '(Normal)' : '(Flexível)'}`}
-              labels={["7 dias", "30 dias", "90 dias"]}
+              labels={["7d", "30d", "90d"]}
             />
             
             {/* Funcionalidades adicionais */}

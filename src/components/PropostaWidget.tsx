@@ -98,10 +98,10 @@ Esta proposta é válida por 15 dias a partir da data de emissão.
 
   return (
     <div 
-      className={`bg-brown-950 border border-orange-900 rounded-xl p-6 relative transition-all duration-300 ease-out ${
+      className={`bg-brown-950 border border-orange-900 rounded-xl p-4 sm:p-6 relative transition-all duration-300 ease-out ${
         animado ? 'opacity-100 scale-100' : 'opacity-0 scale-0'
       }`}
-      style={{ maxHeight: 'calc(100vh - 40px)', overflowY: 'auto', scrollbarWidth: 'none' }}
+      style={{ maxHeight: 'calc(100vh - 40px)', overflowY: 'auto', scrollbarWidth: 'none', maxWidth: '100%' }}
     >
       {/* Estilo para esconder a barra de rolagem */}
       <style>{`
