@@ -54,12 +54,14 @@ export default function HomePage() {
       <section className="py-8 sm:py-10 md:py-12">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-6 sm:mb-10 md:mb-14">
           <h2 className="text-2xl sm:text-3xl font-inter font-bold">Últimos projetos</h2>
-          <Link to="/projects" className="text-sm sm:text-md flex gap-2 sm:gap-3 place-items-center font-inter text-gray-300 py-2 px-3 sm:px-4 bg-orange-902 border-1 border-orange-950 rounded-md hover:bg-orange-900 transition-all duration-300 ease-out delay-150 relative overflow-hidden group">
+          <Link to="/projects">
+          <a className="text-sm sm:text-md flex gap-2 sm:gap-3 place-items-center font-inter text-gray-300 py-2 px-3 sm:px-4 bg-orange-902 border-1 border-orange-950 rounded-md hover:bg-orange-900 transition-all duration-300 ease-out delay-150 relative overflow-hidden group">
             <a>Ver todos</a>
             <div className="relative w-5 flex items-center justify-center h-5 overflow-hidden">
               <FaAngleRight className="text-gray-300 w-4 sm:w-5 h-4 sm:h-5 absolute transition-all duration-700 ease-in-out transform group-hover:-translate-x-10 group-hover:opacity-0" />
               <RxOpenInNewWindow className="text-gray-300 stroke-1 w-3 sm:w-4 h-3 sm:h-4 absolute transition-all duration-700 ease-in-out transform translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100" />
             </div>
+            </a>
           </Link>
         </div>
 
