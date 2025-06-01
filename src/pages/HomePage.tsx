@@ -72,7 +72,7 @@ export default function HomePage() {
                 <img
                   src="https://i.ibb.co/0jnH9Xzt/Slide-16-9-1.png"
                   alt="EggHunt"
-                  className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
+                  className="w-full h-48 sm:h-56 object-cover transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
                 />
               </div>
               <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
@@ -97,9 +97,9 @@ export default function HomePage() {
             <div className="relative">
               <div className="overflow-hidden">
                 <img
-                  src="https://i.ibb.co/Vc14XzC1/Preview-Voteasy.jpg"
+                  src="https://i.ibb.co/h1428Y3p/Preview-Voteasy.png"
                   alt="Voteasy"
-                  className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
+                  className="w-full h-48 sm:h-56 object-cover object-top transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
                 />
               </div>
               <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
