@@ -97,7 +97,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="overflow-hidden">
                 <img
-                  src="https://i.ibb.co/h1428Y3p/Preview-Voteasy.png"
+                  src="https://i.ibb.co/Z1xYzxVL/Preview-Voteasy.png"
                   alt="Voteasy"
                   className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
                 />
