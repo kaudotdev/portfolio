@@ -55,9 +55,9 @@ const ProjectsPage: FC = () => {
       detailsLink: "#"
     },
     {
-      image: "src\\assets\\images\\placeholder.png",
-      title: "Projeto 2",
-      description: "Descrição do projeto",
+      image: "https://i.ibb.co/h1428Y3p/Preview-Voteasy.png",
+      title: "Voteasy - Sistema de Votação",
+      description: "Site para criação de salas de votação com QR Code",
       githubLink: "#",
       detailsLink: "#"
     },

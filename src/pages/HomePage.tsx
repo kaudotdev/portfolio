@@ -80,7 +80,7 @@ export default function HomePage() {
                 <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Projeto de evento de páscoa para Paper 1.20.4</p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
-                <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
+                <a href="https://github.com/kaudotdev/egg-hunt" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
                   <FiGithub className="w-3 sm:w-3.5" />
                   GitHub
                 </a>
@@ -97,14 +97,14 @@ export default function HomePage() {
             <div className="relative">
               <div className="overflow-hidden">
                 <img
-                  src="src\assets\images\placeholder.png"
-                  alt="Projeto 2"
+                  src="https://i.ibb.co/h1428Y3p/Preview-Voteasy.png"
+                  alt="Voteasy"
                   className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
                 />
               </div>
               <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
-                <h3 className="text-lg sm:text-xl font-bold font-inter">Projeto 2</h3>
-                <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Descrição do projeto</p>
+                <h3 className="text-lg sm:text-xl font-bold font-inter">Voteasy - Sistema de Votação</h3>
+                <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Site para criação de salas de votação com QR Code</p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
                 <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
