@@ -12,6 +12,7 @@ interface ProjectCardProps {
   description: string;
   githubLink?: string;
   detailsLink?: string;
+  className?: string;
 }
 
 // Componentes reutilizáveis
@@ -22,7 +23,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ image, title, description, githubLi
         <img
           src={image}
           alt={title}
-          className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
+          className="w-full h-48 sm:h-56 object-cover object-top transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
         />
       </div>
       <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
@@ -50,8 +51,15 @@ const ProjectsPage: FC = () => {
     {
       image: "https://i.ibb.co/0jnH9Xzt/Slide-16-9-1.png",
       title: "Egghunt - Mine em evidência",
-      description: "Projeto de evento de páscoa para Paper 1.20.4",
-      githubLink: "#",
+      description: "Projeto de evento de páscoa no Minecraft para Paper na versão 1.20.4 utilizada em uma live e no discord do Estudos em Evidência",
+      githubLink: "https://github.com/kaudotdev/egg-hunt",
+      detailsLink: "#"
+    },
+    {
+      image: "https://i.ibb.co/ynn107Cy/Library-Preview.jpg",
+      title: "Library API",
+      description: "Uma API RESTful completa para gerenciamento de uma biblioteca, desenvolvida com Java e Spring Boot.",
+      githubLink: "https://github.com/kaudotdev/library-api",
       detailsLink: "#"
     },
     {
@@ -61,20 +69,14 @@ const ProjectsPage: FC = () => {
       githubLink: "#",
       detailsLink: "#"
     },
-    {
-      image: "src\\assets\\images\\placeholder.png",
-      title: "Projeto 3",
-      description: "Descrição do projeto",
-      githubLink: "#",
-      detailsLink: "#"
-    },
-    {
+/*    {
       image: "src\\assets\\images\\placeholder.png",
       title: "Projeto 4",
       description: "Descrição do projeto",
       githubLink: "#",
       detailsLink: "#"
     }
+    */
   ];
 
   return (

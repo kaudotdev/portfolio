@@ -77,7 +77,7 @@ export default function HomePage() {
               </div>
               <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
                 <h3 className="text-lg sm:text-xl font-bold font-inter">Egghunt - Mine em evidência</h3>
-                <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Projeto de evento de páscoa para Paper 1.20.4</p>
+                <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Projeto de evento de páscoa no Minecraft para Paper na versão 1.20.4 utilizada em uma live e no discord do Estudos em Evidência</p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
                 <a href="https://github.com/kaudotdev/egg-hunt" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
@@ -92,7 +92,34 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Project Card 2 */}
+        {/* Project Card 2 */}
+        <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
+            <div className="relative">
+                <div className="overflow-hidden">
+                    <img
+                        src="https://i.ibb.co/ynn107Cy/Library-Preview.jpg"
+                        alt="Library"
+                        className="w-full h-48 sm:h-56 object-cover transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
+                    />
+                </div>
+                <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
+                    <h3 className="text-lg sm:text-xl font-bold font-inter">Library API</h3>
+                    <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Uma API RESTful completa para gerenciamento de uma biblioteca, desenvolvida com Java e Spring Boot.</p>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
+                    <a href="https://github.com/kaudotdev/library-api" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
+                        <FiGithub className="w-3 sm:w-3.5" />
+                        GitHub
+                    </a>
+                    <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-150 text-xs sm:text-sm">
+                        <CgDetailsMore className="w-3 sm:w-4" />
+                        Detalhes
+                    </a>
+                </div>
+            </div>
+        </div>
+
+          {/* Project Card 3 */}
           <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
               <div className="overflow-hidden">
@@ -119,35 +146,9 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Project Card 3 */}
-          <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
-            <div className="relative">
-              <div className="overflow-hidden">
-                <img
-                  src="src\assets\images\placeholder.png"
-                  alt="Projeto 3"
-                  className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
-                />
-              </div>
-              <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
-                <h3 className="text-lg sm:text-xl font-bold font-inter">Projeto 3</h3>
-                <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Descrição do projeto</p>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
-                <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
-                  <FiGithub className="w-3 sm:w-3.5" />
-                  GitHub
-                </a>
-                <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-150 text-xs sm:text-sm">
-                  <CgDetailsMore className="w-3 sm:w-4" />
-                  Detalhes
-                </a>
-              </div>
-            </div>
-          </div>
 
           {/* Project Card 4 */}
-          <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
+{/*          <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
               <div className="overflow-hidden">
                 <img
@@ -171,7 +172,7 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </section>
     </div>

@@ -8,7 +8,10 @@ import { CgFigma } from "react-icons/cg";
 import { FaNodeJs, FaPython } from "react-icons/fa";
 import { FaJava as FaJava6 } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
-import { SiExpress, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiSpringboot, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { TbBrandMysql } from "react-icons/tb";
+import { PiFileSqlDuotone } from "react-icons/pi";
+import * as React from "react";
 
 // Tipos
 interface SkillItemProps {
@@ -28,18 +31,23 @@ const SkillItem: FC<SkillItemProps> = ({ icon, name }) => (
 const AboutMePage: FC = () => {
   // Dados estruturados para facilitar manutenção
   const frontendSkills = [
-    { icon: <IoLogoReact />, name: "React.js" },
     { icon: <BiLogoTypescript />, name: "TypeScript" },
+    { icon: <IoLogoReact />, name: "React.js" },
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <CgFigma />, name: "Figma" }
   ];
 
   const backendSkills = [
-    { icon: <FaNodeJs />, name: "Node.js" },
-    { icon: <SiExpress />, name: "Express" },
-    { icon: <SiMongodb />, name: "MongoDB" },
     { icon: <FaJava6 />, name: "Java" },
+    { icon: <SiSpringboot />, name: "SpringBoot" },
+    { icon: <FaNodeJs />, name: "Node.js" },
     { icon: <FaPython />, name: "Python" }
+  ];
+
+  const sqlSkills = [
+    { icon: <PiFileSqlDuotone />, name: "SQL" },
+    { icon: <TbBrandMysql />, name: "MySQL" },
+    { icon: <SiMongodb />, name: "MongoDB" }
   ];
 
   return (
@@ -54,34 +62,42 @@ const AboutMePage: FC = () => {
           </p>
         </div>
 
-        <div className="mt-8 sm:mt-10 md:mt-12 bg-brown-950 border border-orange-900 rounded-xl p-4 sm:p-6 md:p-8">
-          <h2 className="text-2xl sm:text-3xl font-bold font-inter mb-4 sm:mb-6">Quem sou eu</h2>
-          <p className="text-base sm:text-lg text-gray-300 mb-4">
+        <div className="mt-6 sm:mt-8 md:mt-10 bg-brown-950 border border-orange-900 rounded-xl p-4 sm:p-6 md:p-8">
+          <h2 className="text-2xl sm:text-3xl font-bold font-inter mb-2 sm:mb-2">Quem sou eu</h2>
+          <p className="text-base sm:text-lg text-gray-300 mb-3 font-inter">
             Olá! Sou Kauan Souza, um desenvolvedor fullstack com paixão por criar experiências digitais incríveis.
             Trabalho com tecnologias modernas para desenvolver soluções eficientes e elegantes.
           </p>
-          <p className="text-base sm:text-lg text-gray-300">
+          <p className="text-base sm:text-lg text-gray-300 font-inter">
             Minha jornada na programação começou há alguns anos e desde então venho aprimorando minhas habilidades
             em diversas tecnologias e frameworks.
           </p>
         </div>
 
         <div className="mt-8 sm:mt-10 md:mt-12 bg-brown-950 border border-orange-900 rounded-xl p-4 sm:p-6 md:p-8">
-          <h2 className="text-2xl sm:text-3xl font-bold font-inter mb-4 sm:mb-6">Habilidades</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xl font-bold mb-4 text-orange-500">Frontend</h3>
-              <ul className="pl-6 text-gray-300 font-inter space-y-3">
+          <h2 className="text-2xl sm:text-3xl font-bold font-inter mb-2 sm:mb-2">Habilidades</h2>
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-6">
+            <div className="pl-6">
+              <h3 className="text-xl font-bold mb-4 text-orange-500 font-inter">Frontend</h3>
+              <ul className=" text-gray-300 font-inter space-y-3">
                 {frontendSkills.map((skill, index) => (
                   <SkillItem key={index} icon={skill.icon} name={skill.name} />
                 ))}
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4 text-orange-500">Backend</h3>
-              <ul className="pl-6 text-gray-300 font-inter space-y-3">
+              <h3 className="text-xl font-bold mb-4 text-orange-500 font-inter">Backend</h3>
+              <ul className="text-gray-300 font-inter space-y-3">
                 {backendSkills.map((skill, index) => (
                   <SkillItem key={index} icon={skill.icon} name={skill.name} />
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-orange-500 font-inter">Banco de dados</h3>
+              <ul className="text-gray-300 font-inter space-y-3">
+                {sqlSkills.map((skill, index) => (
+                    <SkillItem key={index} icon={skill.icon} name={skill.name} />
                 ))}
               </ul>
             </div>
