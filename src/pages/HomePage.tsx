@@ -1,5 +1,5 @@
 import { FiGithub } from "react-icons/fi";
-import { CgDetailsMore } from "react-icons/cg";
+import { CgDetailsMore, CgWebsite } from "react-icons/cg";
 import { FaAngleRight } from "react-icons/fa";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { FaGithub } from "react-icons/fa";
@@ -13,7 +13,6 @@ import { Link } from "react-router-dom";
 export default function HomePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      {/* Hero Section */}
       <section className="pt-16 sm:pt-20 md:pt-24 py-8 sm:py-10 md:py-12">
         <h1 className="text-4xl/10 sm:text-5xl/12 md:text-6xl/14 lg:text-7xl/15 xl:text-8xl/20 font-bold font-fira">
           <span className="text-orange-500">Technology</span> moves<br />
@@ -21,7 +20,6 @@ export default function HomePage() {
         </h1>
         <p className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-normal text-gray-400 mt-2 sm:mt-4">Olá, sou Kauan Souza</p>
 
-        {/* Social Links */}
         <div className="flex flex-wrap gap-3 mt-5 font-medium">
           <a href="https://github.com/kaudotdev" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-sm text-sm group relative overflow-hidden hover:scale-105 transition-all duration-500 ease-in-out">
             <FaGithub className="w-4 h-4 text-black" />
@@ -50,7 +48,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section className="py-8 sm:py-10 md:py-12">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-6 sm:mb-10 md:mb-14">
           <h2 className="text-2xl sm:text-3xl font-inter font-bold">Últimos projetos</h2>
@@ -63,9 +60,33 @@ export default function HomePage() {
           </Link>
         </div>
 
-        {/* Project Grid */}
+         <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
+            <div className="relative">
+              <div className="overflow-hidden">
+                <img
+                  src="https://iili.io/K4MQWVn.png"
+                  alt="Projeto Grizzly Connect"
+                  className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
+                />
+              </div>
+              <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
+                <h3 className="text-lg sm:text-xl font-bold font-inter">Grizzly Connect</h3>
+                <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Projeto para um cliente real com design moderno, personalizado e pensado. Um site que direciona os influenciadores com as marcas. API de formulário de contato feito à mão com JS e Python.</p>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
+                <a href="www.grizzlyconnect.com" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
+                  <CgWebsite className="w-3 sm:w-3.5" />
+                  Link do Site
+                </a>
+                <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-150 text-xs sm:text-sm">
+                  <CgDetailsMore className="w-3 sm:w-4" />
+                  Detalhes
+                </a>
+              </div>
+            </div>
+          </div>
+          
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-          {/* Project Card 1 */}
           <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
               <div className="overflow-hidden">
@@ -92,7 +113,7 @@ export default function HomePage() {
             </div>
           </div>
 
-        {/* Project Card 2 */}
+
         <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
                 <div className="overflow-hidden">
@@ -119,7 +140,6 @@ export default function HomePage() {
             </div>
         </div>
 
-          {/* Project Card 3 */}
           <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
               <div className="overflow-hidden">
@@ -147,32 +167,6 @@ export default function HomePage() {
           </div>
 
 
-          {/* Project Card 4 */}
-{/*          <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
-            <div className="relative">
-              <div className="overflow-hidden">
-                <img
-                  src="src\assets\images\placeholder.png"
-                  alt="Projeto 4"
-                  className="h-auto w-full transition-all duration-700 group-hover:blur-sm group-hover:brightness-50"
-                />
-              </div>
-              <div className="p-4 sm:p-6 transition-transform duration-400 transform group-hover:-translate-y-16 bg-brown-950 border-t-1 border-orange-950 relative z-10 ease-out-in">
-                <h3 className="text-lg sm:text-xl font-bold font-inter">Projeto 4</h3>
-                <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Descrição do projeto</p>
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
-                <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
-                  <FiGithub className="w-3 sm:w-3.5" />
-                  GitHub
-                </a>
-                <a href="#" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-150 text-xs sm:text-sm">
-                  <CgDetailsMore className="w-3 sm:w-4" />
-                  Detalhes
-                </a>
-              </div>
-            </div>
-          </div>*/}
         </div>
       </section>
     </div>

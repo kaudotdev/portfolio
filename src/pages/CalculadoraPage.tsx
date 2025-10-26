@@ -2,7 +2,7 @@ import { FC, useState, useEffect, useCallback } from 'react';
 import { FiInfo } from 'react-icons/fi';
 import PropostaWidget from '../components/PropostaWidget';
 
-// Tipos
+
 interface ParametroProps {
   label: string;
   tooltip: string;
@@ -24,7 +24,7 @@ interface OpcaoAdicionalProps {
   percentual: number;
 }
 
-// Componentes reutilizáveis
+
 const Parametro: FC<ParametroProps> = ({
   label,
   tooltip,
@@ -90,61 +90,54 @@ const OpcaoAdicional: FC<OpcaoAdicionalProps> = ({
   </div>
 );
 
-// Constantes
-const VALOR_BASE_HORA = 30;
-const PRAZO_REFERENCIA = 30;
+
+const VALOR_BASE_HORA = 20;
+const PRAZO_REFERENCIA = 45;
 
 const CalculadoraPage: FC = () => {
-  // Estados para os parâmetros da calculadora
   const [horas, setHoras] = useState(20);
   const [complexidade, setComplexidade] = useState(1.0);
   const [prazo, setPrazo] = useState(30);
   const [incluirBackend, setIncluirBackend] = useState(false);
   const [incluirSEO, setIncluirSEO] = useState(false);
   
-  // Estados para os resultados
+
   const [valorEstimado, setValorEstimado] = useState(0);
   const [valorPorHora, setValorPorHora] = useState(0);
 
-  // Função para formatar o nível de complexidade
   const formatarComplexidade = (valor: number): string => {
     if (valor <= 1.2) return "Baixa";
     if (valor <= 1.6) return "Média";
     return "Alta";
   };
 
-  // Função para calcular o valor estimado
   const calcularValor = useCallback(() => {
-    // Cálculo do valor por hora baseado na complexidade
     const valorHoraCalculado = VALOR_BASE_HORA * (1 + (complexidade - 1) * 1.5);
     
-    // Multiplicador de prazo (curva exponencial)
     const multiplicadorPrazo = prazo < PRAZO_REFERENCIA
       ? 1 + Math.pow(1 - (prazo / PRAZO_REFERENCIA), 2)
       : 1;
     
-    // Adicionais para funcionalidades extras
     let multiplicadorFuncionalidades = 1;
     if (incluirBackend) multiplicadorFuncionalidades += 0.35;
     if (incluirSEO) multiplicadorFuncionalidades += 0.15;
     
-    // Cálculo do valor por hora final
     const valorHoraFinal = valorHoraCalculado * multiplicadorPrazo;
     setValorPorHora(Math.round(valorHoraFinal));
     
-    // Cálculo do valor total e arredondamento
+
     const valorTotal = horas * valorHoraFinal * multiplicadorFuncionalidades;
     const valorArredondado = Math.ceil(valorTotal / 50) * 50;
     
     setValorEstimado(valorArredondado);
   }, [horas, complexidade, prazo, incluirBackend, incluirSEO]);
 
-  // Recalcular quando os parâmetros mudarem
+
   useEffect(() => {
     calcularValor();
   }, [calcularValor]);
 
-  // Estado para controlar a visibilidade do widget de proposta
+
   const [mostrarProposta, setMostrarProposta] = useState(false);
   
   return (
@@ -158,7 +151,6 @@ const CalculadoraPage: FC = () => {
         </p>
         
         <div className="mt-6 sm:mt-8 md:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-          {/* Coluna da esquerda - Por que calcular */}
           <div className="bg-brown-950 border border-orange-900 rounded-xl p-3 sm:p-4 md:p-6 lg:p-8">
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-xl sm:text-2xl">📋</span>
@@ -217,7 +209,6 @@ const CalculadoraPage: FC = () => {
             </p>
           </div>
           
-          {/* Coluna da direita - Calculadora */}
           <div className="bg-brown-950 border border-orange-900 rounded-xl p-3 sm:p-4 md:p-6 lg:p-8">
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <span className="text-xl sm:text-2xl">🧮</span>
@@ -228,7 +219,6 @@ const CalculadoraPage: FC = () => {
               Ajuste cada parâmetro com precisão para obter uma estimativa detalhada
             </p>
             
-            {/* Parâmetros da calculadora */}
             <Parametro
               label="Número estimado de horas"
               tooltip="Cada hora adicional impacta diretamente no custo final"
@@ -265,7 +255,6 @@ const CalculadoraPage: FC = () => {
               labels={["7d", "30d", "90d"]}
             />
             
-            {/* Funcionalidades adicionais */}
             <div className="mb-6 space-y-2 sm:space-y-3">
               <h3 className="font-medium mb-1 sm:mb-2 text-sm sm:text-base">Funcionalidades adicionais</h3>
               
@@ -288,7 +277,6 @@ const CalculadoraPage: FC = () => {
               />
             </div>
             
-            {/* Valor estimado */}
             <div className="bg-gray-50/5 rounded-lg p-3 sm:p-4 md:p-6 text-center">
               <h3 className="text-base sm:text-lg font-medium text-gray-300 mb-1 sm:mb-2">Valor estimado:</h3>
               <p className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">R$ {valorEstimado.toLocaleString('pt-BR')},00</p>
@@ -316,8 +304,7 @@ const CalculadoraPage: FC = () => {
             </button>
           </div>
         </div>
-        
-        {/* Modal de Proposta com fundo blur e animação */}
+
         {mostrarProposta && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 transition-all duration-300">
             <div 

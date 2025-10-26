@@ -1,25 +1,23 @@
-// Agrupando importações por categoria
-// Importações de React
+
 import { FC } from 'react';
 
-// Importações de ícones - organizadas alfabeticamente
 import { BiLogoTypescript } from "react-icons/bi";
 import { CgFigma } from "react-icons/cg";
 import { FaNodeJs, FaPython } from "react-icons/fa";
 import { FaJava as FaJava6 } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
-import { SiSpringboot, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiSpringboot, SiMongodb, SiTailwindcss, SiC } from "react-icons/si";
 import { TbBrandMysql } from "react-icons/tb";
 import { PiFileSqlDuotone } from "react-icons/pi";
 import * as React from "react";
 
-// Tipos
+
 interface SkillItemProps {
   icon: React.ReactNode;
   name: string;
 }
 
-// Componentes reutilizáveis
+
 const SkillItem: FC<SkillItemProps> = ({ icon, name }) => (
   <li className="flex items-center gap-2">
     <span className="text-xl">{icon}</span>
@@ -27,9 +25,8 @@ const SkillItem: FC<SkillItemProps> = ({ icon, name }) => (
   </li>
 );
 
-// Componente principal
+
 const AboutMePage: FC = () => {
-  // Dados estruturados para facilitar manutenção
   const frontendSkills = [
     { icon: <BiLogoTypescript />, name: "TypeScript" },
     { icon: <IoLogoReact />, name: "React.js" },
@@ -38,6 +35,7 @@ const AboutMePage: FC = () => {
   ];
 
   const backendSkills = [
+    { icon: <SiC />, name: "C" },
     { icon: <FaJava6 />, name: "Java" },
     { icon: <SiSpringboot />, name: "SpringBoot" },
     { icon: <FaNodeJs />, name: "Node.js" },
