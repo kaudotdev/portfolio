@@ -61,7 +61,7 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-          
+
          <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
               <div className="overflow-hidden">
@@ -76,7 +76,7 @@ export default function HomePage() {
                 <p className="text-xs sm:text-sm font-inter font-medium text-orange-002">Projeto para um cliente real com design moderno, personalizado e pensado. Um site que direciona os influenciadores com as marcas. API de formulário de contato feito à mão com JS e Python.</p>
               </div>
               <div className="absolute bottom-0 left-0 right-0 flex justify-evenly px-4 sm:px-6 space-x-3 sm:space-x-4 opacity-0 group-hover:opacity-100 transition-all duration-100 pb-4 sm:pb-6 z-20 transform translate-y-8 group-hover:translate-y-0 ease-in-out">
-                <a href="www.grizzlyconnect.com" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
+                <a href="https://www.grizzlyconnect.com" className="border-shine bg-brown-950 border-1 border-orange-900 hover:border-orange-940 hover:bg-brown-951 text-white grow justify-center gap-2 sm:gap-6 py-2 sm:py-3 rounded-lg flex items-center transition-all duration-700 transform translate-y-4 scale-0 group-hover:translate-y-0 group-hover:scale-100 ease-out delay-75 text-xs sm:text-sm">
                   <CgWebsite className="w-3 sm:w-3.5" />
                   Link do Site
                 </a>
