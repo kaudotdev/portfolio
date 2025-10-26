@@ -60,6 +60,8 @@ export default function HomePage() {
           </Link>
         </div>
 
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          
          <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
               <div className="overflow-hidden">
@@ -86,7 +88,6 @@ export default function HomePage() {
             </div>
           </div>
           
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <div className="bg-brown-950 rounded-lg overflow-hidden border border-orange-950 group relative">
             <div className="relative">
               <div className="overflow-hidden">
